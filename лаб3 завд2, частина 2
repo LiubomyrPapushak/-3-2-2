@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include <conio.h>
+
+int main()
+{
+	unsigned int n;
+	setlocale(LC_CTYPE, "ukr");
+	printf("\n Введiть число вiд 1 до 10 для виведення прізвища та ім'я студента n=");
+	scanf("%d", &n);
+
+	switch (n)
+	{
+	case 1: printf("\n %d Бабчук Сергій Георгійович", n); break;
+	case 2: printf("\n %d Даскалюк Михайло Михайлович", n); break;
+	case 3: printf("\n %d Дудка Святослав Ігорович", n); break;
+	case 4: printf("\n %d Дуднік Віктор Борисович", n); break;
+	case 5: printf("\n %d Калинчук Богдан Євгенович", n); break;
+	case 6: printf("\n %d Каптелов Кіріл Євгенович", n); break;
+	case 7: printf("\n %d Кожукар Юрій Васильович", n); break;
+	case 8: printf("\n %d Кондрюк Костянтин Олександрович", n); break;
+	case 9: printf("\n %d Косолапов Євгеній Романович", n); break;
+	case 10: printf("\n %d Лупу Ігор Георгійович", n); break;
+	default: printf("\n Введено некоректне число!");
+	}
+	int getch(); getch();
+	return 0;
+}
