@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include <math.h>
+#include <conio.h>
+float a; //Результат обчислень//
+int main()
+{
+	int x, y, z;
+	setlocale(LC_CTYPE, "ukr");
+	printf("\n Введiть три цiлих числа: \n");
+	printf("\n \t Значення x=");
+	scanf("%d", &x);
+	printf("\n \t Значення y=");
+	scanf("%d", &y);
+	printf("\n \t Значення z=");
+	scanf("%d", &z);
+	if (x * y > 0)
+	{
+		a = (pow(x, 2) + 2 * x * z) - pow(y, 2) / sqrt(2 * x) - pow(x, 2) * y;
+		printf("\n Результат розрахунку функцii при заданих x= %d та y= %d та z= %d становить %4.3f", x, y, z, a);
+	}
+	else printf("\n Введенi Вами числа x= %d та y= %d та z= %d в добутку sqrt(2*x)= %d < 0, \n що не дозволяє обрахувати sqrt(2 * x) - pow(x, 2) * y)", x, y);
+
+	int getch(); getch();
+	return 0;
+}
